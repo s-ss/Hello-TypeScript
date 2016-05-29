@@ -26,6 +26,20 @@ class Jukebox {
         return this.songs[songIndex];
     }
 }
+class Playlist {
+    private songs:Song[] = [];
+    static macSongCount:number = 30;
+
+    constructor(public name:string) {
+    }
+
+    addSong(song:Song) {
+        if (this.songs.length >= Playlist.macSongCount) {
+            throw new Error('Playlist is full')
+        }
+        this.songs.push(song);
+    }
+}
 
 var songs = [
     new Song('Bushbaby', 'Megaphone'),
