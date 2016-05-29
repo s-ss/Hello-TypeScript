@@ -1,5 +1,10 @@
 class Song {
-    constructor(private  artist:string, private title:string) {
+    private artist:string;
+    private title:string;
+
+    constructor(artist:string, title:string) {
+        this.artist = artist;
+        this.title = title;
     }
 
     play() {
