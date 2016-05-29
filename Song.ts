@@ -51,3 +51,8 @@ var songs = [
 
 var jukebox = new Jukebox(songs);
 jukebox.play();
+
+var playlist = new Playlist('My Playlist');
+var name = playlist.name;
+playlist.addSong(new Song('Therapy?', 'Crooked Timber'));
+var maxSongs = playlist.maxSongCount;
