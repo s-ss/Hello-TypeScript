@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/s-ss/Hello-TypeScript/issues"
   },
-  "homepage": "https://github.com/s-ss/Hello-TypeScript#readme"
+  "homepage": "https://github.com/s-ss/Hello-TypeScript#readme",
+  "devDependencies": {
+    "gulp-typescript": "^2.13.6",
+    "q": "file:gulp"
+  }
 }
